@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.smurf-container {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.smurf-village h2 {
+  text-align: center;
+ 
+}
