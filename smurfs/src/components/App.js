@@ -7,6 +7,7 @@ import "./App.css";
 
 import Smurfs from './Smurfs'
 import AddSmurf from './addSmurf'
+import { Route } from 'react-router-dom'
 
 
 const initialFormValues = {
@@ -93,8 +94,8 @@ function App() {
     return (
     <SmurfContext.Provider value={{smurfs, removeSmurf}}>
       <FormContext.Provider value={{onInputChange, onSubmit, formValues}}>
-            <Smurfs/>
-            <AddSmurf/>
+                  <Smurfs/>
+                  <AddSmurf/>
         </FormContext.Provider>
     </SmurfContext.Provider>
     )

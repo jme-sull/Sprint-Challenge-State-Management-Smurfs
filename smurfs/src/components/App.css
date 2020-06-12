@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color: cornflowerblue;
+  font-size: 50px;
 }
 
 .smurf-container {
@@ -8,6 +10,9 @@
   text-align: center;;
   border: solid grey 2px;
   padding: 3%;
+  font-size: 18px;
+  color: black;
+  background-color: white;
 }
 
 .smurf-container img {
@@ -31,15 +36,29 @@
   justify-content: space-around;
 }
 
-.form-container form{
+.form-container form {
   display: flex;
   flex-direction: column;
-  width: 30rem;
   margin: auto;
+  color: white;
   
 }
 
 .form-container h2 {
   text-align: center;
   margin-top: 2%;
+  color: white;
+}
+
+.form-container button {
+  margin-top: 2%;
+  width: 5rem;
+}
+
+.form-container {
+  background-color: cornflowerblue;
+  width: 20rem;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 10%;
 }
