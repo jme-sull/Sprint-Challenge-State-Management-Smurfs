@@ -65,8 +65,6 @@ function App() {
     }
 
 
-  
-
   useEffect(() => { 
     axios.get(`http://localhost:3333/smurfs`)
       .then(res => {
@@ -78,8 +76,22 @@ function App() {
       })
     }, [])
 
+    
+    
+  const removeSmurf = smurfID => {
+
+      axios.delete(`http://localhost:3333/smurfs/${smurfID}`)
+      .then(res => {
+        setSmurfs(res.data)
+      })
+      .catch(err => {
+        debugger
+      })
+
+    }
+
     return (
-    <SmurfContext.Provider value={{smurfs}}>
+    <SmurfContext.Provider value={{smurfs, removeSmurf}}>
       <FormContext.Provider value={{onInputChange, onSubmit, formValues}}>
             <Smurfs/>
             <AddSmurf/>
