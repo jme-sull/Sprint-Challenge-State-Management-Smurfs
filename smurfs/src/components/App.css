@@ -13,3 +13,16 @@
   text-align: center;
  
 }
+
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: auto;
+  
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-top: 2%;
+}

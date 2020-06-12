@@ -12,7 +12,7 @@ const Smurfs = () => {
             <h2>My Smurf Village</h2>
             {
                 smurfs.map(item => (
-                    <Smurf smurf={item}/>
+                    <Smurf key={item.id} smurf={item}/>
                 ))
 
             }
