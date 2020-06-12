@@ -8,15 +8,19 @@ const Smurfs = () => {
     const { smurfs } = useContext(SmurfContext)
 
     return (
-        <div className='smurf-village'>
+        <div className='App'>
             <h2>My Smurf Village</h2>
-            {
-                smurfs.map(item => (
-                    <Smurf key={item.id} smurf={item}/>
-                ))
+        
+                <div className='smurf-village'>
+                    
+                    {
+                        smurfs.map(item => (
+                            <Smurf key={item.id} smurf={item}/>
+                        ))
 
-            }
-        </div>
+                    }
+            </div>
+    </div>
     )
 }
 

@@ -5,13 +5,30 @@
 .smurf-container {
   width: 20%;
   margin: auto;
-  text-align: center;
+  text-align: center;;
+  border: solid grey 2px;
+  padding: 3%;
+}
+
+.smurf-container img {
+  width: 15rem;
+
+  
 }
 
 
 .smurf-village h2 {
   text-align: center;
  
+}
+
+.smurf-village {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
 }
 
 .form-container form{
